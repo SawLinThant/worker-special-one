@@ -4,9 +4,9 @@ import { Children } from "react";
 
 const Layout: LayoutwithChildren = ({ children }) => {
   return (
-    <div className="flex min-h-screen w-full">
+    <div className="flex min-h-screen w-full flex-col">
         <Navbar/>
-      <div>{children}</div>
+      <div className="flex flex-col mt-20">{children}</div>
     </div>
   );
 };

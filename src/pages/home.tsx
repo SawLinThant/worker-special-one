@@ -4,7 +4,7 @@ import { ReactElement } from "react";
 
 const Home:NextPageWithLayout = () => {
    return(
-    <div className="text-red-500">This is Home</div>
+    <div className="text-red-500"></div>
    )
 }
 
