@@ -32,7 +32,12 @@ const Navbar = () => {
               </div>
               <div className="fixed top-[7rem] left-0 w-screen z-10 h-[30vh] border-2 border-gray-800 hidden group-hover:block opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-white">
                 <div className="p-2 w-full h-full">
-                    <div className="w-full h-full bg-gray-100"></div>
+                    <div className="w-full h-full bg-gray-100 grid grid-cols-6">
+                        <div className="bg-gray-500 col-span-2 flex items-center justify-center">
+                            <h1 className="text-white font-bold text-2xl">Choose Our Services</h1>
+                        </div>
+                        <div className="col-span-4"></div>
+                    </div>
                 </div>
               </div>
             </div>
