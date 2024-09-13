@@ -21,6 +21,7 @@ const Home: NextPageWithLayout = () => {
               commodi vel. Porro odit magnam odio sapiente alias temporibus
               repellendus natus molestias inventore dignissimos!
             </p>
+            <button className="min-w-[20rem]"></button>
           </div>
         </div>
         <div className="lg:col-span-6 md:w-full lg:h-[70vh] md:order-1 lg:order-2 md:h-[40vh] border-2 border-gray-700 rounded-lg overflow-hidden">
@@ -43,7 +44,22 @@ const Home: NextPageWithLayout = () => {
           </div>
         </div>
       </div>
-      <div className="h-full w-full"></div>
+      <div className="h-full w-full">
+        <div className="w-full h-full grid grid-cols-2 rounded-lg overflow-hidden">
+            <div className="w-full h-full flex flex-col gap-8 p-7">
+                <h1 className="w-full text-center text-2xl font-bold">About Us</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ea dolorum, vero consequatur, laudantium mollitia quod ex possimus error ratione deserunt odit et omnis iusto placeat velit saepe. Voluptatem, reprehenderit?</p>
+            </div>
+            <div className="w-full lg:min-h-[40vh] grid grid-cols-2 p-4 gap-4">
+                <div className="w-full h-full">
+                    <img className="max-w-full max-h-full object-cover rounded-lg" src="images/img1.jpg" alt="" />
+                </div>
+                <div className="w-full h-full">
+                    <img className="max-w-full max-h-full object-cover rounded-lg" src="images/img2.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+      </div>
     </div>
   );
 };
