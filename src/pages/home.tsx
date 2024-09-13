@@ -1,3 +1,6 @@
+import ContactUs from "@/modules/common/components/sectionsCompo/contactus";
+import Motto from "@/modules/common/components/sectionsCompo/motto";
+import OurServices from "@/modules/common/components/sectionsCompo/ourservices";
 import Slider from "@/modules/common/components/slider";
 import Layout from "@/modules/layout/template";
 import { NextPageWithLayout } from "@/types/global";
@@ -28,22 +31,9 @@ const Home: NextPageWithLayout = () => {
           <Slider imageUrls={IMAGE_URLS} />
         </div>
       </div>
-      <div className="w-full h-full">
-        <div className="w-full h-full grid lg:grid-cols-2 md:grid-cols-1 gap-4">
-          <div className="w-full lg:h-[50vh] md:h-[30vh] rounded-lg overflow-hidden">
-            <img className="w-full h-full" src="images/vission.jpg" alt="" />
-          </div>
-          <div className="w-full lg:h-full md:min-h-[25vh] p-4 flex flex-col gap-3 bg-gray-200 rounded-lg">
-            <h2 className="text-2xl font-bold">Our Vission</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              quibusdam ipsa corrupti excepturi voluptate eaque eveniet odit,
-              distinctio est voluptatem! Tempore cum asperiores maiores neque
-              quae, illo amet quis quasi!
-            </p>
-          </div>
-        </div>
-      </div>
+  <Motto/>
+  <OurServices/>
+  <ContactUs/>
       <div className="h-full w-full">
         <div className="w-full h-full grid grid-cols-2 rounded-lg overflow-hidden">
             <div className="w-full h-full flex flex-col gap-8 p-7">
