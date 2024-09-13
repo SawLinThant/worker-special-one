@@ -8,14 +8,15 @@ type NavbarProps = {
 
 const Navbar = ({ scrollToSection }: NavbarProps) => {
   return (
-    <div className="w-screen h-28 fixed z-20  border-b border-gray-800 shadow bg-theme text-white">
+    <div className="w-screen h-28 fixed z-20  border-b border-gray-800 shadow bg-primary text-white">
       <div className="w-full h-full px-6 grid grid-cols-2">
         <div className="w-full h-full flex flex-row items-center gap-4 text-left">
           <div
             onClick={() => scrollToSection("home")}
-            className="w-20 h-20 hover:cursor-pointer border border-white rounded-full flex flex-col items-center justify-center ml-8"
+            className="w-24 h-24 mb-2 hover:cursor-pointer  flex flex-col items-center justify-center ml-8"
           >
-            <h2 className="font-extrabold text-3xl text-green-600">W</h2>
+         <img   className="max-w-full max-h-full "
+                src="images/img.jpg" />
           </div>
         </div>
         <div className="lg:flex flex-row items-center justify-between md:hidden">
