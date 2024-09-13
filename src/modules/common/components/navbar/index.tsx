@@ -5,8 +5,8 @@ import { IoReorderThree } from "react-icons/io5";
 const Navbar = () => {
   const router = useRouter(); 
   return (
-    <div className="w-screen h-28 fixed  border-b border-gray-800 shadow bg-theme text-white">
-      <div className="w-full h-full px-6 z-20 grid grid-cols-2">
+    <div className="w-screen h-28 fixed z-20  border-b border-gray-800 shadow bg-theme text-white">
+      <div className="w-full h-full px-6  grid grid-cols-2">
         <div className="w-full h-ful flex flex-row items-center gap-4 text-left">
           <div onClick={() => router.push('/')} className="w-20 h-20 hover:cursor-pointer border border-white rounded-full flex flex-col items-center justify-center ml-8">
             <h2 className="font-extrabold text-3xl text-green-600">W</h2>
