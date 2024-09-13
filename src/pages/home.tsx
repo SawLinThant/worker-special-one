@@ -1,3 +1,6 @@
+import ContactUs from "@/modules/common/components/sectionsCompo/contactus";
+import Motto from "@/modules/common/components/sectionsCompo/motto";
+import OurServices from "@/modules/common/components/sectionsCompo/ourservices";
 import Slider from "@/modules/common/components/slider";
 import Layout from "@/modules/layout/template";
 import { NextPageWithLayout } from "@/types/global";
@@ -49,39 +52,10 @@ const Home: NextPageWithLayout = () => {
           <Slider imageUrls={IMAGE_URLS} />
         </div>
       </div>
-      <div id="services" className="w-full h-full">
-        <div className="w-full h-full grid lg:grid-cols-2 md:grid-cols-1 gap-4 bg-gray-200">
-          <div className="w-full lg:h-[50vh] md:h-[30vh] rounded-r-lg overflow-hidden">
-            <img className="w-full h-full" src="images/vission.jpg" alt="" />
-          </div>
-          <div className="w-full lg:h-full md:min-h-[25vh] p-4 flex flex-col justify-start gap-8">
-            <div className="flex flex-col gap-2">
-              <h2 className="text-2xl font-extrabold">Our Vission</h2>
-              <ul className="d">
-                <li>
-                  {" "}
-                  To become one of the biggest and most successful overseas
-                  employment agencies in Myanmar with hard work and dedication
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h2 className="text-2xl font-extrabold">Our Mission</h2>
-              <ul className="gap-4">
-                <li className="">
-                  Togive 100 percent effort for our customers, clients and
-                  partners
-                </li>
-                <li className="">
-                  Togive provide efficient and effective service for our
-                  customers, clients, and partners
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="about-us" className="h-full w-full">
+  <Motto/>
+  <OurServices/>
+  <ContactUs/>
+      <div className="h-full w-full">
         <div className="w-full h-full grid grid-cols-2 rounded-lg overflow-hidden">
           <div className="w-full h-full flex flex-col gap-8 p-7">
             <h1 className="w-full text-center text-2xl font-extrabold">

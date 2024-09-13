@@ -1,3 +1,5 @@
+import React from "react";
+
 const Footer = () => {
     return(
         <footer className="w-[98vw] min-h-[40vh] p-10 bg-theme grid grid-cols-12">
