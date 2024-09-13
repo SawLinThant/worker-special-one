@@ -1,12 +1,17 @@
+import { useRouter } from "next/navigation";
 import { FaChevronDown } from "react-icons/fa";
 import { IoReorderThree } from "react-icons/io5";
 
 const Navbar = () => {
+  const router = useRouter(); 
   return (
     <div className="w-screen h-28 fixed  border-b border-gray-800 shadow bg-theme text-white">
       <div className="w-full h-full px-6 z-20 grid grid-cols-2">
-        <div className="w-full h-ful flex flex-row items-center text-left">
-          <h1 className="font-bold text-2xl">Worker Special One</h1>
+        <div className="w-full h-ful flex flex-row items-center gap-4 text-left">
+          <div onClick={() => router.push('/')} className="w-20 h-20 hover:cursor-pointer border border-white rounded-full flex flex-col items-center justify-center ml-8">
+            <h2 className="font-extrabold text-3xl text-green-600">W</h2>
+          </div>
+          {/* <h1 className="font-bold text-2xl">Worker Special One</h1> */}
         </div>
         <div className="lg:flex flex-row items-center justify-between md:hidden">
           <div className="w-3/4 grid grid-cols-4">
