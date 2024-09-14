@@ -1,89 +1,93 @@
-import { useRouter } from "next/navigation";
+import { useRef } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IoReorderThree } from "react-icons/io5";
 
-const Navbar = () => {
-  const router = useRouter(); 
+type NavbarProps = {
+  scrollToSection: (section:string) => void
+  toggleMobileNav: () => void
+}
+
+const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
   return (
-    <div className="w-screen h-28 fixed  border-b border-gray-800 shadow bg-theme text-white">
-      <div className="w-full h-full px-6 z-20 grid grid-cols-2">
-        <div className="w-full h-ful flex flex-row items-center gap-4 text-left">
-          <div onClick={() => router.push('/')} className="w-20 h-20 hover:cursor-pointer border border-white rounded-full flex flex-col items-center justify-center ml-8">
-            <h2 className="font-extrabold text-3xl text-green-600">W</h2>
+    <div className="w-screen h-28 px-6 fixed z-20 border-b border-gray-800 shadow bg-theme text-white">
+      <div className="w-full h-full px-6 grid grid-cols-2">
+        <div className="w-full h-full flex flex-row items-center gap-4 text-left">
+          <div
+            onClick={() => scrollToSection("home")}
+            className="w-20 h-20 hover:cursor-pointer border border-white rounded-full flex flex-col items-center justify-center"
+          >
+         <img   className="max-w-full max-h-full "
+                src="images/img.jpg" />
           </div>
-          {/* <h1 className="font-bold text-2xl">Worker Special One</h1> */}
         </div>
-        <div className="lg:flex flex-row items-center justify-between md:hidden">
+        <div className="lg:flex flex-row items-center justify-between hidden md:hidden">
           <div className="w-3/4 grid grid-cols-4">
-            <div className="w-full h-28 relative group ">
-              <div className="w-full h-full flex flex-row items-center justify-center gap-2">
+            <div className="w-full h-28 relative group">
+              <div
+                onClick={() => scrollToSection("home")}
+                className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
+              >
                 <p className="font-semibold">Home</p>
-                <div className="group-hover:rotate-180 transition-all duration-300">
-                  <FaChevronDown size={15} />
-                </div>{" "}
-              </div>
-              <div className="fixed top-[7rem] left-0 w-screen h-[30vh] border-2 border-gray-800 hidden group-hover:block opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-white">
-                <div className="p-2 w-full h-full">
-                    <div className="w-full h-full bg-gray-100"></div>
-                </div>
+                <FaChevronDown
+                  size={15}
+                  className="group-hover:rotate-180 transition-all duration-300"
+                />
               </div>
             </div>
-            <div className="w-full h-28 relative group ">
-              <div className="flex flex-row items-center justify-center gap-2 w-full h-full">
+            <div className="w-full h-28 relative group">
+              <div
+                onClick={() => scrollToSection("service")}
+                className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
+              >
                 <p className="font-semibold">Services</p>
-                <div className="group-hover:rotate-180 transition-all duration-300">
-                  <FaChevronDown size={15} />
-                </div>{" "}
-              </div>
-              <div className="fixed top-[7rem] left-0 w-screen z-10 h-[30vh] border-2 border-gray-800 hidden group-hover:block opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-white">
-                <div className="p-2 w-full h-full">
-                    <div className="w-full h-full bg-gray-100 grid grid-cols-6">
-                        <div className="bg-gray-500 col-span-2 flex items-center justify-center">
-                            <h1 className="text-white font-bold text-2xl">Choose Our Services</h1>
-                        </div>
-                        <div className="col-span-4"></div>
-                    </div>
-                </div>
+                <FaChevronDown
+                  size={15}
+                  className="group-hover:rotate-180 transition-all duration-300"
+                />
               </div>
             </div>
             <div className="relative group w-full h-28">
-              <div className="flex flex-row items-center justify-center gap-2 w-full h-full">
+              <div
+                onClick={() => scrollToSection("aboutus")}
+                className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
+              >
                 <p className="font-semibold">About Us</p>
-                <div className="group-hover:rotate-180 transition-all duration-300">
-                  <FaChevronDown size={15} />
-                </div>{" "}
-              </div>
-              <div className="fixed top-[7rem] left-0 w-screen z-30 h-[30vh] border-2 border-gray-800 hidden group-hover:block opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-white">
-                <div className="p-2 w-full h-full">
-                    <div className="w-full h-full bg-gray-100"></div>
-                </div>
+                <FaChevronDown
+                  size={15}
+                  className="group-hover:rotate-180 transition-all duration-300"
+                />
               </div>
             </div>
             <div className="relative group w-full h-28">
-              <div className="flex flex-row items-center justify-center gap-2 w-full h-full">
+              <div
+                onClick={() => scrollToSection("contact-us")}
+                className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
+              >
                 <p className="font-semibold">Contact Us</p>
-                <div className="group-hover:rotate-180 transition-all duration-300">
-                  <FaChevronDown size={15} />
-                </div>{" "}
-              </div>
-              <div className="fixed top-[7rem] left-0 w-screen z-30 h-[30vh] border-2 border-gray-800 hidden group-hover:block opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-white">
-                <div className="p-2 w-full h-full">
-                    <div className="w-full h-full bg-gray-100"></div>
-                </div>
+                <FaChevronDown
+                  size={15}
+                  className="group-hover:rotate-180 transition-all duration-300"
+                />
               </div>
             </div>
           </div>
           <div className="h-full flex items-center justify-center">
-            <button className="py-2 px-4 bg-gray-600 border border-gray-100 rounded-full text-white">
+            <button
+              onClick={() => scrollToSection("contact-us")}
+              className="py-2 px-4 bg-gray-600 border border-gray-100 rounded-full text-white"
+            >
               Contact Us
             </button>
           </div>
         </div>
-        <div className="lg:hidden md:flex flex-row items-center justify-end">
-            <button><IoReorderThree size={25}/></button>
+        <div className="lg:hidden md:flex flex-row items-center flex justify-end">
+          <button onClick={() => toggleMobileNav()}>
+            <IoReorderThree size={25} />
+          </button>
         </div>
       </div>
     </div>
   );
 };
+
 export default Navbar;
