@@ -4,22 +4,23 @@ import { IoReorderThree } from "react-icons/io5";
 
 type NavbarProps = {
   scrollToSection: (section:string) => void
+  toggleMobileNav: () => void
 }
 
-const Navbar = ({ scrollToSection }: NavbarProps) => {
+const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
   return (
-    <div className="w-screen h-28 fixed z-20  border-b border-gray-800 shadow bg-primary text-white">
+    <div className="w-screen h-28 px-6 fixed z-20 border-b border-gray-800 shadow bg-theme text-white">
       <div className="w-full h-full px-6 grid grid-cols-2">
         <div className="w-full h-full flex flex-row items-center gap-4 text-left">
           <div
             onClick={() => scrollToSection("home")}
-            className="w-24 h-24 mb-2 hover:cursor-pointer  flex flex-col items-center justify-center ml-8"
+            className="w-20 h-20 hover:cursor-pointer border border-white rounded-full flex flex-col items-center justify-center"
           >
          <img   className="max-w-full max-h-full "
                 src="images/img.jpg" />
           </div>
         </div>
-        <div className="lg:flex flex-row items-center justify-between md:hidden">
+        <div className="lg:flex flex-row items-center justify-between hidden md:hidden">
           <div className="w-3/4 grid grid-cols-4">
             <div className="w-full h-28 relative group">
               <div
@@ -35,7 +36,7 @@ const Navbar = ({ scrollToSection }: NavbarProps) => {
             </div>
             <div className="w-full h-28 relative group">
               <div
-                onClick={() => scrollToSection("services")}
+                onClick={() => scrollToSection("service")}
                 className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
               >
                 <p className="font-semibold">Services</p>
@@ -47,7 +48,7 @@ const Navbar = ({ scrollToSection }: NavbarProps) => {
             </div>
             <div className="relative group w-full h-28">
               <div
-                onClick={() => scrollToSection("about-us")}
+                onClick={() => scrollToSection("aboutus")}
                 className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
               >
                 <p className="font-semibold">About Us</p>
@@ -79,8 +80,8 @@ const Navbar = ({ scrollToSection }: NavbarProps) => {
             </button>
           </div>
         </div>
-        <div className="lg:hidden md:flex flex-row items-center justify-end">
-          <button>
+        <div className="lg:hidden md:flex flex-row items-center flex justify-end">
+          <button onClick={() => toggleMobileNav()}>
             <IoReorderThree size={25} />
           </button>
         </div>
