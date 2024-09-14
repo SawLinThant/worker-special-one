@@ -4,9 +4,10 @@ import { IoReorderThree } from "react-icons/io5";
 
 type NavbarProps = {
   scrollToSection: (section:string) => void
+  toggleMobileNav: () => void
 }
 
-const Navbar = ({ scrollToSection }: NavbarProps) => {
+const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
   return (
     <div className="w-screen h-28 px-6 fixed z-20 border-b border-gray-800 shadow bg-theme text-white">
       <div className="w-full h-full px-6 grid grid-cols-2">
@@ -79,7 +80,7 @@ const Navbar = ({ scrollToSection }: NavbarProps) => {
           </div>
         </div>
         <div className="lg:hidden md:flex flex-row items-center flex justify-end">
-          <button>
+          <button onClick={() => toggleMobileNav()}>
             <IoReorderThree size={25} />
           </button>
         </div>
