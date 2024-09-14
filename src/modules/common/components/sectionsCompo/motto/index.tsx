@@ -3,21 +3,36 @@ import { TiTick } from "react-icons/ti";
 import { useInView } from "react-intersection-observer";
 
 const Motto = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.9, // Trigger when 50% of the component is visible
+  // const { ref, inView } = useInView({
+  //   triggerOnce: false,
+  //   threshold: 0.4,
+  // });
+  const { ref: leftRef, inView: LeftInView } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
   });
-
-  const animateClass = inView ? "animate__animated animate__fadeInUp" : "";
+  const { ref: rightRef, inView: RightInView } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+  const { ref: midRef, inView: midInView } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
   return (
-    <div ref={ref}  className={` animate_delay-1s ${animateClass}`}>
-      <div className="w-full h-full">
+    <div >
+      <div className={`w-full h-full `}>
         <h1 className=" text-primary  text-4xl  font-extrabold text-center mb-10">
           Our Motto
         </h1>
         <div className="w-full h-full grid lg:grid-cols-3 md:grid-cols-1 gap-4">
-          <div className=" relative w-full lg:h-full md:min-h-[25vh] p-4 flex flex-col gap-3 md:mb-5 sm:mb-5 bg-primary rounded-lg">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div
+          ref={leftRef}
+            className={`${
+              LeftInView ? "translate-x-0 opacity-100" : "-translate-x-40 opacity-0"
+            }  relative w-full lg:h-full md:min-h-[25vh] p-4 flex flex-col gap-3 md:mb-5 sm:mb-5 bg-primary rounded-lg hover:transform hover:-translate-y-2 transition-transform duration-500 ease-in-out shadow-xl group`}
+          >
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2  transition-transform duration-500 group-hover:rotate-180">
               <img
                 src="images/visionIcon.png"
                 alt="Circular Image"
@@ -32,8 +47,13 @@ const Motto = () => {
               employment agencies in Myanmar with hard work and dedication.
             </p>
           </div>
-          <div className="relative w-full lg:h-full md:min-h-[25vh] p-4 flex flex-col gap-3 md:mb-5 sm:mb-5 bg-primary rounded-lg">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div
+           ref={midRef}
+            className={`${
+              midInView ? "translate-y-0 opacity-100 " : "translate-y-40 opacity-0"
+            } relative w-full lg:h-full md:min-h-[25vh] p-4 flex flex-col gap-3 md:mb-5 sm:mb-5 bg-primary rounded-lg hover:transform hover:-translate-y-2 transition-transform duration-500 ease-in-out shadow-xl group`}
+          >
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2  transition-transform duration-500 group-hover:rotate-180">
               <img
                 src="images/MI2.png"
                 alt="Circular Image"
@@ -50,8 +70,13 @@ const Motto = () => {
               customers,clients and partners.
             </p>
           </div>
-          <div className="relative w-full lg:h-full md:min-h-[25vh] p-4 flex flex-col gap-3 md:mb-5 sm:mb-5 bg-primary rounded-lg">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div
+           ref={rightRef}
+            className={`${
+              RightInView ? "translate-x-0 opacity-100" : "translate-x-40 opacity-0"
+            }  relative w-full lg:h-full md:min-h-[25vh] p-4 flex flex-col gap-3 md:mb-5 sm:mb-5 bg-primary rounded-lg hover:transform hover:-translate-y-2 transition-transform duration-500 ease-in-out shadow-xl group`}
+          >
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2  transition-transform duration-500 group-hover:rotate-180">
               <img
                 src="images/CV2.png"
                 alt="Circular Image"
