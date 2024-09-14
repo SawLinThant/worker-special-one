@@ -9,19 +9,19 @@ const Motto = () => {
   // });
   const { ref: leftRef, inView: LeftInView } = useInView({
     triggerOnce: false,
-    threshold: 0.5,
+
   });
   const { ref: rightRef, inView: RightInView } = useInView({
     triggerOnce: false,
-    threshold: 0.5,
+ 
   });
   const { ref: midRef, inView: midInView } = useInView({
     triggerOnce: false,
-    threshold: 0.5,
+  
   });
   return (
     <div >
-      <div className={`w-full h-full `}>
+      <div id="motto" className={`w-full h-full `}>
         <h1 className=" text-primary  text-4xl  font-extrabold text-center mb-10">
           Our Motto
         </h1>
