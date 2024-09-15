@@ -1,8 +1,8 @@
 import AboutUs from "@/modules/common/components/sectionsCompo/aboutus";
 import CompanyInfo from "@/modules/common/components/sectionsCompo/companyinfo";
-import ContactUs from "@/modules/common/components/sectionsCompo/contactus";
+
 import Motto from "@/modules/common/components/sectionsCompo/motto";
-import OurServices from "@/modules/common/components/sectionsCompo/ourservices";
+
 import Slider from "@/modules/common/components/slider";
 import Layout from "@/modules/layout/template";
 import { NextPageWithLayout } from "@/types/global";
@@ -43,15 +43,15 @@ const Home: NextPageWithLayout = () => {
           className="w-full h-full grid lg:grid-cols-10 md:grid-cols-1 grid-cols-1 gap-4"
         >
           <div className="lg:col-span-4 md:w-full lg:h-full md:order-2 lg:order-1 md:min-h-[20vh] rounded-lg border-2 border-gray-800  p-7">
-            <div className="w-full h-full p-6  flex flex-col rounded-lg bg-gray-200 gap-8">
-              <h1 className="text-2xl font-bold">Worker special One</h1>
-              <p className="text-justify">
+            <div className="w-full h-full p-6  flex flex-col rounded-lg bg-primary gap-8">
+              <h1 className="text-4xl font-extrabold text-white">Worker special One</h1>
+              <p className="text-justify text-white leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Molestias dicta ratione magni fugiat tempore nesciunt
                 distinctio, commodi vel. Porro odit magnam odio sapiente alias
                 temporibus repellendus natus molestias inventore dignissimos!
               </p>
-              <button onClick={() => scrollToSection("aboutus")} className="max-w-[9rem] bg-theme text-white p-2 rounded-md border border-gray-500">
+              <button onClick={() => scrollToSection("aboutus")} className="max-w-[9rem]  bg-gray-600 text-white p-2 rounded-md border border-gray-500">
                 View More
               </button>
             </div>
@@ -61,8 +61,8 @@ const Home: NextPageWithLayout = () => {
           </div>
         </div>
         <Motto />
-        <OurServices />
-        <ContactUs />
+   
+ 
         <AboutUs />
       </div>
       <CompanyInfo/>

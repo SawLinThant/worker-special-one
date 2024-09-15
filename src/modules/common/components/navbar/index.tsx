@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IoReorderThree } from "react-icons/io5";
 
@@ -9,14 +8,14 @@ type NavbarProps = {
 
 const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
   return (
-    <div className="w-screen h-28 px-6 fixed z-20 border-b border-gray-800 shadow bg-theme text-white">
+    <div className="w-screen h-28 px-6 fixed z-20 border-b border-gray-800 shadow bg-primary text-white">
       <div className="w-full h-full px-6 grid grid-cols-2">
         <div className="w-full h-full flex flex-row items-center gap-4 text-left">
           <div
             onClick={() => scrollToSection("home")}
-            className="w-20 h-20 hover:cursor-pointer border border-white rounded-full flex flex-col items-center justify-center"
+            className="w-28 h-28 hover:cursor-pointer  flex flex-col items-center justify-center"
           >
-         <img   className="max-w-full max-h-full "
+         <img   className="max-w-full max-h-full mb-4 "
                 src="images/img.jpg" />
           </div>
         </div>
@@ -28,22 +27,22 @@ const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
                 className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
               >
                 <p className="font-semibold">Home</p>
-                <FaChevronDown
+                {/* <FaChevronDown
                   size={15}
                   className="group-hover:rotate-180 transition-all duration-300"
-                />
+                /> */}
               </div>
             </div>
             <div className="w-full h-28 relative group">
               <div
-                onClick={() => scrollToSection("service")}
+                onClick={() => scrollToSection("motto")}
                 className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
               >
-                <p className="font-semibold">Services</p>
-                <FaChevronDown
+                <p className="font-semibold">Motto</p>
+                {/* <FaChevronDown
                   size={15}
                   className="group-hover:rotate-180 transition-all duration-300"
-                />
+                /> */}
               </div>
             </div>
             <div className="relative group w-full h-28">
@@ -52,10 +51,10 @@ const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
                 className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
               >
                 <p className="font-semibold">About Us</p>
-                <FaChevronDown
+                {/* <FaChevronDown
                   size={15}
                   className="group-hover:rotate-180 transition-all duration-300"
-                />
+                /> */}
               </div>
             </div>
             <div className="relative group w-full h-28">
@@ -64,10 +63,10 @@ const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
                 className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
               >
                 <p className="font-semibold">Contact Us</p>
-                <FaChevronDown
+                {/* <FaChevronDown
                   size={15}
                   className="group-hover:rotate-180 transition-all duration-300"
-                />
+                /> */}
               </div>
             </div>
           </div>

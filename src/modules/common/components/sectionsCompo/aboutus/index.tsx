@@ -20,16 +20,16 @@ const AboutUs = () => {
           className="w-full h-full grid lg:grid-cols-2 md:grid-cols-1 rounded-lg overflow-hidden"
         >
           <div className="w-full h-full flex flex-col gap-8 p-7">
-            <h1 className="w-full text-center text-2xl font-extrabold">
+            <h1 className="w-full text-center font-extrabold text-primary text-4xl ">
               About Us
             </h1>
             <p
-              className={clsx("text-justify transition-all duration-700", {
+              className={clsx("text-primary  font-semibold leading-loose text-justify transition-all duration-700", {
                 "opacity-0 translate-y-[100%]": !aboutUsLeftInView,
                 "opacity-100 translate-y-0": aboutUsLeftInView,
               })}
             >
-              Founded in 2023, the newly formed company is the legacy of Mr. Zaw
+              Founded in 2024, the newly formed company is the legacy of Mr. Zaw
               Zaw Cho and Mrs. Khin Thidar Aung, highly experienced formerly
               owners and managing directors of Shar Lei Cho Company Limited. We
               made the name as an oversea employment agency under the name of
@@ -74,37 +74,37 @@ const AboutUs = () => {
       </div>
       <div className="w-full h-full grid grid-cols-1">
         <div className="w-full h-full grid lg:grid-cols-1 md:grid-cols-1 border border-gray-800 rounded-lg p-6">
-          <div className="w-full h-full p-4 bg-blue-100">
+          <div className="w-full h-full p-4 bg-primary">
               <div className="w-full h-full grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-12 justify-center md:pl-8 lg:pl-8">
             <div className="w-full lg:min-h-[30rem] h-full md:min-h-[25rem] flex flex-col gap-7 justify-center">
                 <div className="w-full flex lg:ml-0 md:ml-0 ml-0 flex-col lg:gap-4 md:gap-4 gap-4">
-                  <h1 className="flex flex-row lg:items-center md:items-center items-start lg:text-center md:text-left text-left font-extrabold text-red-600 lg:text-4xl md:text-2xl text-3xl mt-4">
+                  <h1 className="flex flex-row lg:items-center md:items-center items-start lg:text-center md:text-left text-left font-extrabold text-white lg:text-4xl md:text-2xl text-3xl mt-4">
                     Ms. Khin Thidar Aung
                   </h1>
-                  <p className="">
-                    <span className="border-b-2 border-red-600 pb-2">
+                  <p className=" text-white">
+                    <span className="border-b-2 border-white pb-2">
                       Manging
                     </span>{" "}
                     Director
                   </p>
                 </div>
                 <div className="flex flex-row items-center gap-4 ml-10">
-                  <FaPhone color="red" size={35} />
+                  <FaPhone color="white" size={35} />
                   <div className="flex flex-col items-center">
-                    <a href="tel:09448011904">+95-9448011904</a>
-                    <a href="tel:09985055517">+95-9985055517</a>
+                    <a className=" text-white" href="tel:09448011904">+95-9448011904</a>
+                    <a className=" text-white"  href="tel:09985055517">+95-9985055517</a>
                   </div>
                 </div>
                 <div className="flex flex-row items-center gap-4 ml-10">
-                  <TbWorldShare color="red" size={35} />
+                  <TbWorldShare color="white" size={35} />
                   <div className="flex flex-col items-center">
-                    <p>Licnese Number - 182/2024</p>
+                    <p className=" text-white" >Licnese Number - 182/2024</p>
                   </div>
                 </div>
                 <div className="flex flex-row items-center gap-4 ml-10">
-                  <FaLocationDot color="red" size={35} />
+                  <FaLocationDot color="white" size={35} />
                   <div className="flex flex-col items-center">
-                    <p>No.22 Nay Kyar St, Yangon, Myanmar</p>
+                    <p className=" text-white" >No.22 Nay Kyar St, Yangon, Myanmar</p>
                   </div>
                 </div>
               </div>

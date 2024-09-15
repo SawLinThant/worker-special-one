@@ -23,7 +23,7 @@ const CompanyInfo = () => {
       title: "Our Partners",
       img: "images/company/partner.jpg",
       description:
-        "Ourcompany has established partnerships primarily across Malaysia, with future plans to expand its collaboration to other countries, ensuring top-tier service delivery to all partners.",
+        "Our company has established partnerships primarily across Malaysia, with future plans to expand its collaboration to other countries, ensuring top-tier service delivery to all partners.",
     },
   ];
 
@@ -119,7 +119,10 @@ const CompanyInfo = () => {
       service_name: "Provide a Japanese language center for workers.",
     },
   ];
-
+  const { ref: partnersRef, inView: partnersInView } = useInView({
+    triggerOnce: false,
+threshold:0.8
+  });
   return (
     <div className="w-full h-full py-8 lg:py-8 lg:px-12 px-4 flex flex-col lg:gap-6 md:gap-6 gap-6">
       <div className="w-full h-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-4 md:gap-8 gap-12">
@@ -137,7 +140,7 @@ const CompanyInfo = () => {
                 <div
                   ref={ref}
                   className={clsx(
-                    "w-3/4 min-h-[4rem] text-white bg-gray-600 flex items-center justify-center border border-gray-400 rounded-md transition-all duration-700",
+                    "w-3/4 min-h-[4rem] text-white bg-primary flex items-center justify-center border border-gray-400 rounded-md transition-all duration-700",
                     {
                       "lg:duration-200": index === 0,
                       "lg:duration-500": index === 1,
@@ -164,9 +167,16 @@ const CompanyInfo = () => {
           );
         })}
       </div>
-      <div className="w-full min-h-[20rem] text-white border border-gray-600 bg-gray-600 p-8 flex flex-col gap-4">
+      <div
+        ref={partnersRef}
+        className={` ${
+          partnersInView
+            ? "opacity-100 "
+            : "opacity-0  "
+        }transition-opacity duration-900 delay-600 ease-in-out w-full min-h-[20rem] text-white border border-gray-600 bg-primary p-8 flex flex-col gap-4`}
+      >
         <div>
-          <h2 className="text-3xl font-semibold underline">Our Partners</h2>
+          <h2 className="text-3xl font-semibold ">Our Partners</h2>
         </div>
         <div className="text-xl">
           <h3>Malaysia</h3>
@@ -182,7 +192,7 @@ const CompanyInfo = () => {
           ))}
         </div>
         <div id="service" className="mt-4">
-          <h2 className="text-3xl font-semibold underline">Our Services</h2>
+          <h2 className="text-3xl font-semibold ">Our Services</h2>
         </div>
         <div className="w-full h-full flex flex-wrap justify-start gap-4">
           {SERVICES.map((service) => (
@@ -195,16 +205,15 @@ const CompanyInfo = () => {
           ))}
         </div>
         <div className="mt-4">
-          <h2 className="text-3xl font-semibold text-green-500">
+          <h2 className="text-3xl font-semibold text-white">
             Our Recruitment Procedures
           </h2>
         </div>
         <ul className="list-decimal ml-8 space-y-4">
-            <li> Collecting information of required specification of
-            workers.</li>
-            <li>Recruiting qualified workers.</li>
-            <li>Detail explanation of job description to workers.</li>
-            <li>Providing necessary documents needed for departure.</li>
+          <li> Collecting information of required specification of workers.</li>
+          <li>Recruiting qualified workers.</li>
+          <li>Detail explanation of job description to workers.</li>
+          <li>Providing necessary documents needed for departure.</li>
         </ul>
       </div>
     </div>
