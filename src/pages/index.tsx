@@ -1,6 +1,4 @@
-import Image from "next/image";
 import localFont from "next/font/local";
-import { redirect } from "next/dist/server/api-utils";
 import { type NextPage } from "next";
 
 const geistSans = localFont({

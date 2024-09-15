@@ -1,7 +1,13 @@
 import "@/styles/globals.css";
+import { NextPageWithLayout } from "@/types/global";
+import { AppProps } from "next/app";
 
-const App = ({ Component, pageProps: { session, ...pageProps } }: any) => {
-  const getLayout = Component.getLayout ?? ((page: any) => page);
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout;
+};
+
+const App = ({ Component, pageProps: { ...pageProps } }: AppPropsWithLayout) => {
+  const getLayout = Component.getLayout ?? ((page: NextPageWithLayout) => page);
   return (
     <>
       {getLayout(<Component {...pageProps} />)}
