@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IoReorderThree } from "react-icons/io5";
 
@@ -14,7 +13,7 @@ const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
         <div className="w-full h-full flex flex-row items-center gap-4 text-left">
           <div
             onClick={() => scrollToSection("home")}
-            className="w-20 h-20 hover:cursor-pointer border border-white rounded-full flex flex-col items-center justify-center"
+            className="w-20 h-20 hover:cursor-pointer border border-white rounded-full flex flex-col items-center justify-center overflow-hidden"
           >
          <img   className="max-w-full max-h-full "
                 src="images/img.jpg" />
