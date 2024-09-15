@@ -14,43 +14,43 @@ const CompanyInfo = () => {
     triggerOnce: false,
   });
 
-  const PARTNERS = [
-    {
-      id: "1",
-      country: "Malaysia",
-      company: "Windbond Management & ConsultancySDN. BHD.",
-    },
-    {
-      id: "2",
-      country: "Malaysia",
-      company: " Agensi Pekerjaan Great Resources SDN.BHD.",
-    },
-    {
-      id: "3",
-      country: "Malaysia",
-      company: "Agensi PekerjaanXimile SDN. BHD.",
-    },
-    {
-      id: "4",
-      country: "Malaysia",
-      company: "LG Top Management Services.",
-    },
-    {
-      id: "5",
-      country: "Malaysia",
-      company: "Agensi Pekerjaan ISR Global SDN. BHD.",
-    },
-    {
-      id: "6",
-      country: "Malaysia",
-      company: "Narida Resources SDN. BHD.",
-    },
-    {
-      id: "7",
-      country: "Malaysia",
-      company: "Construction Labour Exchange Center.",
-    },
-  ];
+  // const PARTNERS = [
+  //   {
+  //     id: "1",
+  //     country: "Malaysia",
+  //     company: "Windbond Management & ConsultancySDN. BHD.",
+  //   },
+  //   {
+  //     id: "2",
+  //     country: "Malaysia",
+  //     company: " Agensi Pekerjaan Great Resources SDN.BHD.",
+  //   },
+  //   {
+  //     id: "3",
+  //     country: "Malaysia",
+  //     company: "Agensi PekerjaanXimile SDN. BHD.",
+  //   },
+  //   {
+  //     id: "4",
+  //     country: "Malaysia",
+  //     company: "LG Top Management Services.",
+  //   },
+  //   {
+  //     id: "5",
+  //     country: "Malaysia",
+  //     company: "Agensi Pekerjaan ISR Global SDN. BHD.",
+  //   },
+  //   {
+  //     id: "6",
+  //     country: "Malaysia",
+  //     company: "Narida Resources SDN. BHD.",
+  //   },
+  //   {
+  //     id: "7",
+  //     country: "Malaysia",
+  //     company: "Construction Labour Exchange Center.",
+  //   },
+  // ];
 
   const SERVICES = [
     {
@@ -227,7 +227,7 @@ const CompanyInfo = () => {
           partnersInView ? "opacity-100 " : "opacity-0  "
         }transition-opacity duration-900 delay-600 ease-in-out w-full min-h-[20rem] text-white border border-gray-600 bg-primary p-8 flex flex-col gap-4`}
       >
-        <div>
+        {/* <div>
           <h2 className="text-3xl font-semibold ">Our Partners</h2>
         </div>
         <div className="text-xl">
@@ -242,7 +242,7 @@ const CompanyInfo = () => {
               {partner.company}
             </p>
           ))}
-        </div>
+        </div> */}
         <div id="service" className="mt-4">
           <h2 className="text-3xl font-semibold ">Our Services</h2>
         </div>

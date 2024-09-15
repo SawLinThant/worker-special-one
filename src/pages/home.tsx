@@ -1,12 +1,10 @@
 
-
-
-
 import { Cobe } from "@/modules/common/components/globe3D";
 import AboutUs from "@/modules/common/components/sectionsCompo/aboutus";
 import CompanyInfo from "@/modules/common/components/sectionsCompo/companyinfo";
 
 import Motto from "@/modules/common/components/sectionsCompo/motto";
+import Partners from "@/modules/common/components/sectionsCompo/partners";
 
 import Slider from "@/modules/common/components/slider";
 import Layout from "@/modules/layout/template";
@@ -54,7 +52,7 @@ const Home: NextPageWithLayout = () => {
             <Slider imageUrls={IMAGE_URLS} />
           </div>
         </div>
-        <Cobe/>
+        <Partners/>
         <Motto />
    
  
