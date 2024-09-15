@@ -2,7 +2,7 @@ import Footer from "@/modules/common/components/footer";
 import MobileNav from "@/modules/common/components/mobilenav";
 import Navbar from "@/modules/common/components/navbar";
 import { LayoutwithChildren } from "@/types/utils";
-import { Children, useState } from "react";
+import { useState } from "react";
 
 const Layout: LayoutwithChildren = ({ children }) => {
   const [isCollapse,setisCollapse] = useState<boolean>(true);

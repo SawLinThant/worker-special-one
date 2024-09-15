@@ -1,4 +1,3 @@
-import { FaChevronDown } from "react-icons/fa";
 import { IoReorderThree } from "react-icons/io5";
 
 type NavbarProps = {
@@ -59,10 +58,10 @@ const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
             </div>
             <div className="relative group w-full h-28">
               <div
-                onClick={() => scrollToSection("contact-us")}
+                onClick={() => scrollToSection("service")}
                 className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
               >
-                <p className="font-semibold">Contact Us</p>
+                <p className="font-semibold">Service</p>
                 {/* <FaChevronDown
                   size={15}
                   className="group-hover:rotate-180 transition-all duration-300"
@@ -72,7 +71,7 @@ const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
           </div>
           <div className="h-full flex items-center justify-center">
             <button
-              onClick={() => scrollToSection("contact-us")}
+              onClick={() => scrollToSection("contactus")}
               className="py-2 px-4 bg-gray-600 border border-gray-100 rounded-full text-white"
             >
               Contact Us

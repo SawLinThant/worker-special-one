@@ -15,20 +15,6 @@ const Home: NextPageWithLayout = () => {
     "images/banner/slide3.jpg",
   ];
 
-  const ABOUT_US_CATALOUGE = [
-    {
-      id: "1",
-      heading: "heading1",
-      img_url: "",
-      description: "",
-    },
-    {
-      id: "1",
-      heading: "heading2",
-      img_url: "",
-      description: "",
-    },
-  ];
   const scrollToSection = (section: string) => {
     const element = document.getElementById(section);
     if (element) {

@@ -109,7 +109,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="w-full h-full">
-                <img className="w-full h-full" src="images/MD.jpg" alt="" />
+                <img className="w-full h-full md:object-cover lg:object-cover" src="images/MD.jpg" alt="" />
               </div>
             </div>
           </div>
