@@ -7,7 +7,7 @@ type NavbarProps = {
 
 const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
   return (
-    <div className="w-screen h-28 px-6 fixed z-20 border-b border-gray-800 shadow bg-primary text-white">
+    <div className="w-screen h-28 lg:px-6 md:px-5 px-2 fixed z-20 border-b border-gray-800 shadow bg-primary text-white">
       <div className="w-full h-full px-6 grid grid-cols-2">
         <div className="w-full h-full flex flex-row items-center gap-4 text-left">
           <div
