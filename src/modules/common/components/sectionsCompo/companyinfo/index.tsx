@@ -121,7 +121,7 @@ const CompanyInfo = () => {
   ];
   const { ref: partnersRef, inView: partnersInView } = useInView({
     triggerOnce: false,
-threshold:0.8
+
   });
   return (
     <div className="w-full h-full py-8 lg:py-8 lg:px-12 px-4 flex flex-col lg:gap-6 md:gap-6 gap-6">
