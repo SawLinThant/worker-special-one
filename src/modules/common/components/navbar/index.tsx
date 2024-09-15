@@ -21,13 +21,25 @@ const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
           </div>
         </div>
         <div className="lg:flex flex-row items-center justify-between hidden md:hidden">
-          <div className="w-3/4 grid grid-cols-4">
+          <div className="w-3/4 grid grid-cols-5">
             <div className="w-full h-28 relative group">
               <div
                 onClick={() => scrollToSection("home")}
                 className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
               >
                 <p className="font-semibold">Home</p>
+                {/* <FaChevronDown
+                  size={15}
+                  className="group-hover:rotate-180 transition-all duration-300"
+                /> */}
+              </div>
+            </div>
+            <div className="relative group w-full h-28">
+              <div
+                onClick={() => scrollToSection("partners")}
+                className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
+              >
+                <p className="font-semibold">Partners</p>
                 {/* <FaChevronDown
                   size={15}
                   className="group-hover:rotate-180 transition-all duration-300"
@@ -60,25 +72,37 @@ const Navbar = ({ scrollToSection,toggleMobileNav }: NavbarProps) => {
             </div>
             <div className="relative group w-full h-28">
               <div
-                onClick={() => scrollToSection("contact-us")}
+                onClick={() => scrollToSection("service")}
                 className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
               >
-                <p className="font-semibold">Contact Us</p>
+                <p className="font-semibold">Services</p>
                 {/* <FaChevronDown
                   size={15}
                   className="group-hover:rotate-180 transition-all duration-300"
                 /> */}
               </div>
             </div>
+            {/* <div className="relative group w-full h-28">
+              <div
+                onClick={() => scrollToSection("contact-us")}
+                className="w-full h-full flex flex-row items-center justify-center gap-2 cursor-pointer"
+              >
+                <p className="font-semibold">Contact Us</p>
+                <FaChevronDown
+                  size={15}
+                  className="group-hover:rotate-180 transition-all duration-300"
+                />
+              </div>
+            </div> */}
           </div>
-          <div className="h-full flex items-center justify-center">
+          {/* <div className="h-full flex items-center justify-center">
             <button
               onClick={() => scrollToSection("contact-us")}
               className="py-2 px-4 bg-gray-600 border border-gray-100 rounded-full text-white"
             >
               Contact Us
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="lg:hidden md:flex flex-row items-center flex justify-end">
           <button onClick={() => toggleMobileNav()}>
