@@ -141,9 +141,9 @@ const CompanyInfo = () => {
             </div>
             <div className="w-full h-full mt-6">
               <p className="text-justify">
-                Our company was founded in 2023, continuing the legacy of Mr.
+                Our company was founded in 2024, continuing the legacy of Mr.
                 Zaw Zaw Cho and Mrs. Khin Thidar Aung, who were the former
-                owners and managing directors of Shar Lei Cho Company Limited.
+                owners and managing directors of Shar Lei Cho Company Limited (Since 2012).
               </p>
             </div>
           </div>
@@ -214,7 +214,7 @@ const CompanyInfo = () => {
             <div className="w-full h-full mt-6">
               <p className="text-justify">
                 Our company has established partnerships primarily across
-                Malaysia, with future plans to expand its collaboration to other
+                South East Asia, with future plans to expand its collaboration to other
                 countries, ensuring top-tier service delivery to all partners.
               </p>
             </div>

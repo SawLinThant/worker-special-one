@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhone } from "react-icons/fa6";
+import { FaPhone, FaWhatsapp } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -46,7 +46,7 @@ const Footer = () => {
         <div className="col-span-3 lg:px-8 md:px-6 px-1 flex flex-col items-start gap-8">
           <h2 className=" font-bold text-xl">Follow Us</h2>
           <ul className="ml-4">
-            <li>
+            {/* <li>
               <a
                 className="flex flex-row items-center gap-4"
                 href="tel:09448011904"
@@ -54,7 +54,7 @@ const Footer = () => {
                 <FaInstagramSquare color="white" size={15} />
                 <p>Instagram</p>
               </a>
-            </li>
+            </li> */}
             <li className="mt-4">
               <a
                 className="flex flex-row items-center gap-4"
@@ -67,12 +67,21 @@ const Footer = () => {
             <li className="mt-4">
               <a
                 className="flex flex-row items-center gap-4"
+                href="https://www.facebook.com/profile.php?id=61563296681298&mibextid=LQQJ4d"
+              >
+                <FaWhatsapp color="white" size={15} />
+                <p>Whatsapp</p>
+              </a>
+            </li>
+            {/* <li className="mt-4">
+              <a
+                className="flex flex-row items-center gap-4"
                 href="tel:09985055517"
               >
                 <FaYoutube color="white" size={15} />
                 <p>Youtube</p>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
