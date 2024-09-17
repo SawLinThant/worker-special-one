@@ -85,7 +85,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full h-full py-4 text-white border-t border-white"><p className="text-center">Copyright© 2024 Shwe Lan Chaung. All rights reserved.</p></div>
+      <div className="w-full h-full py-4 text-white border-t border-white"><p className="text-center">Copyright© 2024 Worker Special One. All rights reserved.</p></div>
     </footer>
   );
 };
