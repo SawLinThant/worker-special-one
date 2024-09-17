@@ -155,7 +155,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="w-full h-full">
-                <img className="w-full h-full md:object-cover lg:object-cover" src="images/MDPic.jpg" alt="" />
+                <img className="w-full h-full md:object-cover lg:object-cover" src="images/md6.jpg" alt="" />
               </div>
             </div>
           </div>
