@@ -76,49 +76,7 @@ const AboutUs = () => {
           Our Leaders
         </h1>
         <div className="w-full h-full grid grid-cols-1">
-        <div className="w-full h-full grid lg:grid-cols-1 md:grid-cols-1 border border-gray-800 rounded-lg p-6">
-          <div className="w-full h-full p-4 bg-primary">
-              <div className="w-full h-full grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-12 justify-center md:pl-8 lg:pl-8">
-            <div className="w-full lg:min-h-[30rem] h-full md:min-h-[25rem] flex flex-col gap-7 justify-center">
-                <div className="w-full flex lg:ml-0 md:ml-0 ml-0 flex-col lg:gap-4 md:gap-4 gap-4">
-                  <h1 className="flex flex-row lg:items-center md:items-center items-start lg:text-center md:text-left text-left font-extrabold text-white lg:text-4xl md:text-2xl text-3xl mt-4">
-                    Mrs. Khin Nwe Nwe Hlaing
-                  </h1>
-                  <p className=" text-white">
-                    <span className="border-b-2 border-white pb-2">
-                    Director
-                    </span>{" "}
-                 
-                  </p>
-                </div>
-                <div className="flex flex-row items-center gap-4 ml-10">
-                  <FaPhone color="white" size={35} />
-                  <div className="flex flex-col items-center">
-                    <a className=" text-white" href="tel:09448011904">+95-9448011904</a>
-                    <a className=" text-white"  href="tel:09985055517">+95-9985055517</a>
-                  </div>
-                </div>
-                <div className="flex flex-row items-center gap-4 ml-10">
-                  <TbWorldShare color="white" size={35} />
-                  <div className="flex flex-col items-center">
-                    <p className=" text-white" >License Number - 182/2024</p>
-                  </div>
-                </div>
-                <div className="flex flex-row items-center gap-4 ml-10">
-                  <FaLocationDot color="white" size={35} />
-                  <div className="flex flex-col items-center">
-                    <p className=" text-white" >No.22 Nay Kyar St, Yangon, Myanmar</p>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full h-full">
-                <img className="w-full h-full md:object-cover lg:object-cover" src="images/director.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="w-full h-full grid grid-cols-1">
+        <div className="w-full h-full grid grid-cols-1">
         <div className="w-full h-full grid lg:grid-cols-1 md:grid-cols-1 border border-gray-800 rounded-lg p-6">
           <div className="w-full h-full p-4 bg-primary">
               <div className="w-full h-full grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-12 justify-center md:pl-8 lg:pl-8">
@@ -161,6 +119,49 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+        <div className="w-full h-full grid lg:grid-cols-1 md:grid-cols-1 border border-gray-800 rounded-lg p-6">
+          <div className="w-full h-full p-4 bg-primary">
+              <div className="w-full h-full grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-12 justify-center md:pl-8 lg:pl-8">
+            <div className="w-full lg:min-h-[30rem] h-full md:min-h-[25rem] flex flex-col gap-7 justify-center">
+                <div className="w-full flex lg:ml-0 md:ml-0 ml-0 flex-col lg:gap-4 md:gap-4 gap-4">
+                  <h1 className="flex flex-row lg:items-center md:items-center items-start lg:text-center md:text-left text-left font-extrabold text-white lg:text-4xl md:text-2xl text-3xl mt-4">
+                    Mrs. Khin Nwe Nwe Hlaing
+                  </h1>
+                  <p className=" text-white">
+                    <span className="border-b-2 border-white pb-2">
+                    Director
+                    </span>{" "}
+                 
+                  </p>
+                </div>
+                <div className="flex flex-row items-center gap-4 ml-10">
+                  <FaPhone color="white" size={35} />
+                  <div className="flex flex-col items-center">
+                    <a className=" text-white" href="tel:09448011904">+95-9448011904</a>
+                    <a className=" text-white"  href="tel:09985055517">+95-9985055517</a>
+                  </div>
+                </div>
+                <div className="flex flex-row items-center gap-4 ml-10">
+                  <TbWorldShare color="white" size={35} />
+                  <div className="flex flex-col items-center">
+                    <p className=" text-white" >License Number - 182/2024</p>
+                  </div>
+                </div>
+                <div className="flex flex-row items-center gap-4 ml-10">
+                  <FaLocationDot color="white" size={35} />
+                  <div className="flex flex-col items-center">
+                    <p className=" text-white" >No.22 Nay Kyar St, Yangon, Myanmar</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full h-full">
+                <img className="w-full h-full md:object-cover lg:object-cover" src="images/director.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
   
     </div>
   );
