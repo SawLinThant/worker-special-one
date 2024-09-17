@@ -51,11 +51,15 @@ export function Cobe() {
         mapSamples: 30000,
         mapBrightness: 2.0,
         baseColor: [0.1216, 0.349, 0.447],
-        markerColor: [0.1216, 0.349, 0.447],
+        markerColor: [1.0, 0.647, 0.0],
         glowColor: [1.3, 1.3, 1.3],
         markers: [
-          { location: [16.8409, 96.1735], size: 0.2 }, // Yangon marker
-          { location: [3.1390, 101.6869], size: 0.2 }  // Kuala Lumpur marker
+         
+          { location: [4.2105, 101.9758], size: 0.06 },  // Kuala Lumpur marker
+          { location: [1.3521, 103.8198], size: 0.06 },  // Singapore marker
+          { location: [19.8563, 102.4955], size: 0.06 },  // Laos marker
+          { location: [12.5657, 104.9910], size: 0.06},  // Cambodia marker
+          { location: [35.6762, 139.6503], size: 0.06 }   // Japan marker
         ],
         onRender: (state: any) => {
           // This prevents rotation while dragging

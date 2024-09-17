@@ -15,6 +15,12 @@ const Home: NextPageWithLayout = () => {
     "images/banner/slide1.jpg",
     "images/banner/slide2.jpg",
     "images/banner/slide3.jpg",
+    "images/banner/slide4.jpg",
+    "images/banner/slide5.jpg",
+    "images/banner/slide6.jpg",
+    "images/banner/slide7.jpg",
+    "images/banner/slide8.jpg",
+    "images/banner/slide9.jpg",
   ];
 
   const scrollToSection = (section: string) => {

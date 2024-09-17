@@ -129,7 +129,7 @@ const CompanyInfo = () => {
             >
               <h2>Founded Since</h2>
             </div>
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-[300px]">
               <Image
                 width={500}
                 height={300}
@@ -164,13 +164,13 @@ const CompanyInfo = () => {
             >
               <h2>Staff</h2>
             </div>
-            <div className="w-full h-full relative">
+            <div className="w-full h-[300px] relative">
               <Image
                 width={500}
                 height={300}
                 objectFit="cover"
                 className="max-w-full rounded-lg max-h-full object-cover"
-                src="/images/company/staff.jpg"
+                src="/images/company/staffs1.jpg"
                 alt=""
               />
             </div>
@@ -201,7 +201,7 @@ const CompanyInfo = () => {
             >
               <h2>Our Partners</h2>
             </div>
-            <div className="w-full h-full relative">
+            <div className="w-full h-[300px] relative">
               <Image
                 width={500}
                 height={300}
