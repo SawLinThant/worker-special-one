@@ -256,7 +256,7 @@ const Partners = () => {
                   <span className="pe-2">
                     <FaHandshake />
                   </span>
-                <p className="sm:w-40 w-20">  {partner.country}</p>
+                <p className="sm:w-40 w-30">  {partner.country}</p>
                   <span className="ps-2">
                   {partner.flag}
                   </span>
