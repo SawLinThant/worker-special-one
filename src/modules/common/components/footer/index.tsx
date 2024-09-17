@@ -67,7 +67,8 @@ const Footer = () => {
             <li className="mt-4">
               <a
                 className="flex flex-row items-center gap-4"
-                href="https://wa.me/95985055517"
+                href="https://wa.me/959985055517"//modify ph no 
+
               >
                 <FaWhatsapp color="white" size={15} />
                 <p>Whatsapp</p>
