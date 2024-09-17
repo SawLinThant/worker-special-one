@@ -83,7 +83,7 @@ const AboutUs = () => {
             <div className="w-full lg:min-h-[30rem] h-full md:min-h-[25rem] flex flex-col gap-7 justify-center">
                 <div className="w-full flex lg:ml-0 md:ml-0 ml-0 flex-col lg:gap-4 md:gap-4 gap-4">
                   <h1 className="flex flex-row lg:items-center md:items-center items-start lg:text-center md:text-left text-left font-extrabold text-white lg:text-4xl md:text-2xl text-3xl mt-4">
-                    Mrs. Khin Thidar Aung
+                    Mrs. Khin Thida Aung
                   </h1>
                   <p className=" text-white">
                     <span className="border-b-2 border-white pb-2">
